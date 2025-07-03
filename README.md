@@ -1,5 +1,7 @@
 # Frappe MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@DevWebDJ/frappe_mcp_server)](https://smithery.ai/server/@DevWebDJ/frappe_mcp_server)
+
 A Model Context Protocol (MCP) server for Frappe Framework that exposes Frappe's functionality to AI assistants through the official REST API, with a focus on document CRUD operations, schema handling, and detailed API instructions.
 
 ## Overview
@@ -83,6 +85,14 @@ Or with environment variables:
 
 ```bash
 FRAPPE_URL=https://your-frappe-instance.com FRAPPE_API_KEY=your_api_key FRAPPE_API_SECRET=your_api_secret npx frappe-mcp-server
+```
+
+### Installing via Smithery
+
+To install frappe_mcp_server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@DevWebDJ/frappe_mcp_server):
+
+```bash
+npx -y @smithery/cli install @DevWebDJ/frappe_mcp_server --client claude
 ```
 
 ### Integrating with AI Assistants
